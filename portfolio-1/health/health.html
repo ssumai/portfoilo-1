@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-health</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <script src="../js/health.js" defer></script>
+    <script src="../js/aos.js" defer></script>
+</head>
+
+<body>
+    <!-- ナビゲーションメニュー -->
+    <nav>
+        <button id="menu-open" class="btn-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-TextAlignJustified">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+        </button>
+        <div id="menu-panel">
+            <button id="menu-close" class="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-XSmall">
+                    <path d="M17 17L7 7m10 0L7 17" />
+                </svg>
+            </button>
+            <ul class="menu-list">
+                <li><a class="chevron-r" href="../mechanism/mechanism.html">からだのしくみ</a></li>
+                <li><a class="chevron-r" href="../health/health.html">からだのけんこう</a></li>
+                <li><a class="chevron-r" href="../qa/qa.html">からだのQ&A</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- bg -->
+    <div class="yellow-bg">
+        <header class="header">
+            <a href="../index.html"><img class="logo" src="../images/logo-s.svg" alt="からだリサーチロゴ画像"></a>
+        </header>
+
+        <div data-aos="fade-up" data-aos-delay="500">
+            <div class="col-title">
+                <h2>からだのけんこう</h2>
+                <p>イラストをタッチして調べてみよう！</p>
+            </div>
+            <div class="col-thumb wrapper">
+                <div><img src="../images/immunity.png" alt="免疫(めんえき)って？"></div>
+                <div><img src="../images/exercise.png" alt="運動(うんどう)って？"></div>
+                <div><img src="../images/meal.png" alt="食事(しょくじ)って？"></div>
+            </div>
+            
+            <!-- メイン -->
+            <div class="col-main wrapper">
+                <h1 id="headline">免疫(めんえき)って？</h1>
+                <div id="main-image" class="col-bg" >
+                    <img src="../images/immunity_on.png" alt="免疫イラスト画像">
+                </div>
+                <h4 id="subheading">
+                    外から入ってきたウイルスや細菌(さいきん)から、からだを守る防御(ぼうぎょ)システムだよ。わたしたちのからだが健康（けんこう）でいられるのは、免疫（めんえき）のおかげなんだよ。
+                </h4>
+                <p class="red-title"><span class="discovery-icon"><img src="../images/discovery-icon.png" alt="虫眼鏡アイコン"></span>もっとくわしく！</p>
+                <p id="health-caption">
+                    免疫は、からだの外から入った侵入者（しんにゅうしゃ）である、細菌（さいきん）やウイルスなどに対して免疫細胞（さいぼう）などが「自分」と「自分でないもの」を識別（しきべつ）して、攻撃（こうげき）したり、追い出したりしてからだを守ります。
+                </p>
+            </div>
+
+            <!-- 出典 -->
+            <div class="source wrapper">
+                <p>※このサイトページの文章は、中外製薬株式会社より許諾を得た上で、「ウェブサイト利用規定」にのっとりホームページのコラムテキストを一部抜粋して作成しています。</p>
+                <p>出典: https://www.chugai-pharm.co.jp/ptn/medicine/karada/index.html</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer wrapper">
+                <p><small>&copy; 2024 hii-portfolio</small></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

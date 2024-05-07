@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/aos.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <!-- ナビゲーションメニュー -->
+    <nav>
+        <button id="menu-open" class="btn-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-TextAlignJustified">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+        </button>
+        <div id="menu-panel">
+            <button id="menu-close" class="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-XSmall">
+                    <path d="M17 17L7 7m10 0L7 17" />
+                </svg>
+            </button>
+            <ul class="menu-list">
+                <li><a class="chevron-r" href="mechanism/mechanism.html">からだのしくみ</a></li>
+                <li><a class="chevron-r" href="health/health.html">からだのけんこう</a></li>
+                <li><a class="chevron-r" href="#">からだのQ&A</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- トップ画面 -->
+    <section class="top">
+        <img class="top-img" src="images/logo.svg" alt="からだリサーチロゴ画像">
+
+        <!-- リサーチする（モバイルサイズ） -->
+        <a href="#jump">
+        <div class="research-mobile">
+            <img class="research-mobile-img" src="images/research.svg" alt="リサーチする">
+        </div>
+        </a>
+    </section>
+
+    <!-- コンセプト -->
+    <section class="concept">
+        <div data-aos="zoom-in-up" class="concept-box wrapper">
+            <div class="concept-text">
+                <h2><img src="images/concept.svg" alt="ひとのからだはおもしろい！"></h2>
+                <p> わたしたちのからだにはたくさんの「しくみ」があり、生きていくために重要な「はたらき」をしているよ。 気になる「しくみ」や「はたらき」をタッチして、リサーチしながら、楽しく学習していこう！
+                </p>
+            </div>
+            <div id="balloon">
+                <img data-aos="fade-up" data-aos-delay="1200" class="bal-t" src="images/touch-bal.svg" alt="タッチバルーン">
+                <img data-aos="fade-up" data-aos-delay="1800" class="bal-d" src="images/discovery-bal.svg" alt="発見バルーン">
+            </div>
+        </div>
+    </section>
+
+    <!-- リサーチする -->
+    <section>
+        <div id="jump" class="research-spb">
+            <img src="images/research.svg" alt="リサーチする">
+        </div>
+
+            <div class="research-content">
+                <a href="mechanism/mechanism.html">
+                    <div data-aos="slide-right" class="research-content-box research-content-box__blue">
+                        <div class="research-content-text">
+                            <h3>からだのしくみ</h3>
+                            <p>わたしたちのからだには、たくさんの器官（きかん）があるよ。<br>からだの中を、のぞいてみよう。</p>
+                        </div>
+                        <div class="research-content-img">
+                            <img src="images/karada-rsch_1.png" alt="からだのしくみ画像">
+                        </div>
+                    </div>
+                </a>
+                <a href="health/health.html">
+                    <div data-aos="slide-left" class="research-content-box research-content-box__yellow">
+                        <div class="research-content-text">
+                            <h3>からだのけんこう</h3>
+                            <p>からだが動くのは、どんなしくみかな？ 元気なとき、風邪を引いたとき……。<br>からだには何が起こっているんだろう。</p>
+                        </div>
+                        <div class="research-content-img">
+                            <img src="images/karada-rsch_2.png" alt="からだのけんこう画像">
+                        </div>
+                    </div>
+                </a>
+                <a href="qa/qa.html">
+                    <div data-aos="slide-right" class="research-content-box research-content-box__blue">
+                        <div class="research-content-text">
+                            <h3>からだのQ&A</h3>
+                            <p>まだまだ知りたい、からだのぎもんを見つけよう！</p>
+                        </div>
+                        <div class="research-content-img">
+                            <img src="images/karada-rsch_3.png" alt="からだのQ&A画像">
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <p><small>&copy; 2024 hii-portfolio</small></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

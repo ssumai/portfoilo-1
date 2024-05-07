@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-mechanism</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- ナビゲーションメニュー -->
+    <nav>
+        <button id="menu-open" class="btn-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-TextAlignJustified">
+                <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+        </button>
+        <div id="menu-panel">
+            <button id="menu-close" class="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-XSmall">
+                    <path d="M17 17L7 7m10 0L7 17" />
+                </svg>
+            </button>
+            <ul class="menu-list">
+                <li><a class="chevron-r" href="mechanism.html">からだのしくみ</a></li>
+                <li><a class="chevron-r" href="../health/health.html">からだのけんこう</a></li>
+                <li><a class="chevron-r" href="#">からだのQ&A</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- bg -->
+    <div class="blue-bg">
+        <header class="header">
+            <a href="../index.html"><img class="logo" src="../images/logo-s.svg" alt="からだリサーチロゴ画像"></a>
+        </header>
+
+        <!-- 見出し -->
+            <div class="col-title col-title--blue">
+                <h2>からだのしくみ</h2>
+                <p>器官(きかん) の名前をタッチしてみよう！</p>
+            </div>
+
+        <!-- メイン -->
+            <div class="organ wrapper">
+                <img src="../images/mechanism.svg" alt="人体イラスト">
+                <div><!-- 脳 -->
+                    <button class="organ-open organ-name name-1"><span class="toggle-btn"></span>脳</button>
+                     <section class="modal"><!-- モーダルパネル -->
+                        <div class="modal-header">
+                            <p id="mechanism-title"></p>
+                            <button class="organ-close btn-organ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-XSmall">
+                                <path d="M17 17L7 7m10 0L7 17" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p id="mechanism-caption"></p>
+                    </section>
+                    </div>
+                    <div><!-- 鼻 -->
+                        <button class="organ-open organ-name name-2"><span class="toggle-btn"></span>鼻</button>
+                    </div>
+                    <div><!-- 口 -->
+                        <button class="organ-open organ-name name-3"><span class="toggle-btn"></span>口</button>
+                    </div>
+                    <div><!-- 耳 -->
+                        <button class="organ-open organ-name name-4"><span class="toggle-btn"></span>耳</button>
+                    </div>
+                    <div><!-- 肺 -->
+                        <button class="organ-open organ-name name-5"><span class="toggle-btn"></span>肺</button>
+                    </div>
+                    <div><!-- 肝臓 -->
+                        <button class="organ-open organ-name name-6"><span class="toggle-btn"></span>肝臓</button>
+                    </div>
+                    <div><!-- 胆のう -->
+                        <button class="organ-open organ-name name-7"><span class="toggle-btn"></span>胆のう</button>
+                    </div>
+                    <div><!-- すい臓 -->
+                        <button class="organ-open organ-name name-8"><span class="toggle-btn"></span>すい臓</button>
+                    </div>
+                    <div><!-- 小腸 -->
+                        <button class="organ-open organ-name name-9"><span class="toggle-btn"></span>小腸</button>
+                    </div>
+                    <div><!-- 心臓 -->
+                        <button class="organ-open organ-name name-10"><span class="toggle-btn"></span>心臓</button>
+                    </div>
+                    <div><!-- 胃 -->
+                        <button class="organ-open organ-name name-11"><span class="toggle-btn"></span>胃</button>
+                    </div>
+                    <div><!-- 腎臓 -->
+                        <button class="organ-open organ-name name-12"><span class="toggle-btn"></span>じん臓</button>
+                    </div>
+                    <div><!-- 大腸 -->
+                        <button class="organ-open organ-name name-13"><span class="toggle-btn"></span>大腸</button>
+                    </div>
+                    <div><!-- 膀胱 -->
+                        <button class="organ-open organ-name name-14"><span class="toggle-btn"></span>膀胱</button>
+                    </div>
+            </div>
+
+            <div id="mask"></div>
+
+        <!-- 出典 -->
+            <div class="source wrapper">
+                <p>※このサイトページの文章は、中外製薬株式会社より許諾を得た上で、「ウェブサイト利用規定」にのっとりホームページのコラムテキストを一部抜粋して作成しています。</p>
+                <p>出典: https://www.chugai-pharm.co.jp/ptn/medicine/karada/index.html</p>
+            </div>
+
+        <footer>
+            <div class="footer wrapper">
+                <p><small>&copy; 2024 hii-portfolio</small></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
